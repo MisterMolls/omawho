@@ -1,5 +1,5 @@
 # MySQL.  Versions 4.1 and 5.0 are recommended.
-# 
+#
 # Install the MYSQL driver
 #   gem install mysql2
 #
@@ -10,7 +10,7 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
   adapter: postgresql
-  database: omawho_development
+  database: siouxwho_new_development
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -18,10 +18,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: postgresql
-  database: omawho_test
+  database: siouxwho_new_test
   host: localhost
-  
+
 production:
   adapter: postgresql
-  database: omawho_production
+  database: siouxwho_new_production
   host: localhost
