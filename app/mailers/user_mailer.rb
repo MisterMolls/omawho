@@ -1,9 +1,9 @@
 class UserMailer < ActionMailer::Base
-  @email_display_name = "Omawho"
-  address = Mail::Address.new "sumeet@bigwheelbrigade.com"
-  
+  @email_display_name = "Siouxwho"
+  address = Mail::Address.new "kevinmolland@gmail.com"
+
   address.display_name = @email_display_name
-  
+
   default from: address.format
 
   def reset_password_email(user, email_display_name=@email_display_name)
