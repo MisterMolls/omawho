@@ -20,6 +20,8 @@ class User < ActiveRecord::Base
   validates_length_of :bio, :within => 0..140
   validates_length_of :password, :within => 4..99, :allow_blank => :allow_blank_password
 
+  validates :image_id, :presence => true
+
   belongs_to :image
 
   has_and_belongs_to_many :events
